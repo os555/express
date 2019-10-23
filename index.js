@@ -7,4 +7,8 @@ app.get('*', (req, res) => {
     res.end()
 })
 
-module.exports = app
+app.listen(5000, 'localhost', (err) => {
+    if (err) {
+        console.log(err)
+    }
+})
